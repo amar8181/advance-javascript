@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.getElementByTagName -method</title>
+</head>
+<body>
+        <h1>document.getElementByTagName -method</h1>
+
+        <h1>hello guys</h1>
+        <h2>Welcome to usd</h2>
+
+        <p id="find">
+           <span> hi I am</span>
+           <em>the founder</em>
+           <span> of mega software</span>
+        </p>
+
+        <p id="show">
+           <span> it used to find</span>
+            <b> owenership</b> 
+        </p>
+
+
+
+         <script>
+
+            // more specific method
+
+            var getspan = document.getElementById("find");
+            var result= getspan.getElementsByTagName("span");
+
+            // or 
+
+           // var result = document.getElementById("find").getElementsByTagName("span");
+
+            document.write(result);
+            console.log(result);
+         </script>
+
+        <!-- 
+         <script>
+             var getspan = document.getElementById("find");
+            var result= getspan.getElementsByTagName("*");
+
+             //or
+
+           // var result = document.getElementById("find").getElementsByTagName("*");
+            document.write(result);
+            console.log(result);
+        </script> -->
+
+        <h1>document.getElementByTagName -method 
+                                                  with length</h1>
+
+
+            <script>
+                    var len=document.getElementsByTagName("p").length
+                    document.write(len);
+                    console.log(len);
+
+                    var len=document.getElementsByTagName("span").length
+                    document.write(len);
+                    console.log(len);
+
+            </script>
+
+
+</body>     
+</html>

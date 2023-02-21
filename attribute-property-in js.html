@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute property in js</title>
+</head>
+<body>
+ 
+    <h2 id="myid" class="myclass" title="mydata">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, excepturi?</h2>
+
+    <script>
+    var h=document.getElementById("myid");
+        console.log(h.attributes);
+        console.log(h.attributes[0]);
+        console.log(h.attributes["title"]);
+    </script>
+</body>
+
+</html>

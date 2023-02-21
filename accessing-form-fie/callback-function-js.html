@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback-function-js</title>
+</head>
+<body>
+    <h1>callback-function-js</h1>
+
+    <script>
+        function usd(callback) {
+            var a=101;
+            callback(a);
+        }
+        usd (a => console.log ("i am show function" +a));
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval and clearinterval method in js</title>
+</head>
+<body>
+    <h1>setinterval and clearinterval method in js</h1>
+    <div id="myid"></div>
+
+    <div id="mydiv"></div>   
+    <button type="button" id="mybtn">clear time</button>
+
+    <script>
+            // setinterval method
+
+        // function runtext(){
+        //     document.getElementById("myid").textContent+="hello ";
+        // }
+        // setInterval(runtext, 2000);
+  
+                                                                       // or
+                // clearinterval method
+
+        var intervalID = setInterval(()=>{
+            document.getElementById("mydiv").textContent+="ok  ";
+        }, 2000);
+
+        function clrtime(){
+            clearInterval(intervalID)
+        }
+        document.getElementById("mybtn").addEventListener("click",clrtime);
+    </script>
+</body>
+</html>

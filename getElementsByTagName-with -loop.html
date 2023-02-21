@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>hello guys</h1>
+    <h2>Welcome to usd</h2>
+
+    <p id="find">
+       <span> hi I am</span>
+       <em>the founder</em>
+       <span> of mega software</span>
+    </p>
+
+    <p id="show">
+       <span> it used to find</span>
+        <b> owenership</b> 
+    </p>
+
+    
+    <h1>document.getElementByTagName -method with loop</h1>
+
+    <script>
+                // Loop // 
+          var len=document.getElementsByTagName("p").length
+
+          for(let i = 0; i<len; i++){
+            var result=document.getElementsByTagName("p")[i];
+            document.write(result+"<br>");
+            console.log(result);
+          }
+
+    </script>
+    
+</body>
+</html>

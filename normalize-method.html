@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalize method</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>Normalize method in js</h1>  
+        <h1>hi i am h1</h1>  
+    </div>
+    <script>
+        var targetNode=document.getElementById("myid");
+
+        //creating and appent new text
+         targetNode.appendChild(document.createTextNode("hello "));
+         targetNode.appendChild(document.createTextNode("my Name "));
+         targetNode.appendChild(document.createTextNode("is USD Services "));
+
+         targetNode.normalize();
+
+         console.log(targetNode.childNodes);
+    </script>
+</body>
+</html>

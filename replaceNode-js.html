@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to replace node in js</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>amar</li>
+        <li id="mys">sam</li>
+        <li>mahesh</li>
+        <li id="myp">swap</li>
+    </ul>
+
+
+    <script>
+                // syntax
+               // parentNode.replaceChild(newChild, oldChild);
+
+               //accessing parentNode andoldchildNode
+            var pNode=document.getElementById("myul");
+            var oldChild=document.getElementById("mys");
+
+            // creating newChildNode
+            var  newChild=document.createElement("li");
+                newChild.textContent="prasad";
+
+                // syntax
+                pNode.replaceChild(newChild, oldChild);
+                console.log(pNode);
+            </script>
+<hr>
+
+
+                    <!-- other way to way replace Node -->
+
+            <span id="spn"> its time to show</span>
+
+
+                <script>
+
+                
+
+               //accessing parentNode andoldchildNode
+            var pNode=document.getElementById("myul");
+            var oldChild=document.getElementById("myp");
+
+
+                //accissing span node
+                var newChild1=document.getElementById("spn");
+                pNode.replaceChild(newChild1, oldChild);
+                console.log(pNode);
+
+
+            </script>
+
+
+
+   
+</body>
+</html>

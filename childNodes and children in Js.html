@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes and children in JavaScript</title>
+</head>
+<body >
+
+     <h1 id="myid">childNodes and children in JavaScript
+        <p id="myid1">i am a paragraph</p>
+        <p id="myid2"><span>i am a span</span> i am a paragraph</p>
+        <b>i am super</b>
+     </h1>
+    
+
+     <script>
+                 //    childNodes  property
+
+        var result=document.getElementById("myid");
+        // document.write(result.childNodes);
+        console.log(result.childNodes);
+
+                //      children property
+
+         var result=document.getElementById("myid");
+        // document.write(result.children);
+        console.log(result.children);
+
+                    //length property
+
+         var result=document.getElementById("myid");
+        var lent=result.childNodes.length;
+        document.write(len+"<br>");
+            console.log(len);
+
+         var result=document.getElementById("myid");
+        var len=result.children.length;
+        document.write(len+"<br>");
+        console.log(len);
+
+        //childNodes and children property by using index number
+
+        var result=document.getElementById("myid");
+        console.log(result.children[1]);
+        document.write(result.children[1]);
+        
+        var result=document.getElementById("myid");
+        console.log(result.childNodes[1]);
+        document.write(result.childNodes[1]);
+
+        //loop
+
+                var result=document.getElementById("myid");
+                        var len=result.children.length;
+
+                            for(let i=0; i<len; i++){
+                                console.log(result.children[i]);
+                                document.write(result.children[i].textContent+"<br>")
+                            }
+
+
+                var result=document.getElementById("myid");
+                        var lent=result.childNodes.length;
+
+                            for(let i=0; i<lent; i++){
+                                console.log(result.childNodes[i]);
+                                document.write(result.childNodes[i].textContent+"<br>")
+
+                            }
+
+                //how to change content in any special id by using index number
+
+                var result=document.getElementById("myid");
+
+                // result.children[0].textContent= "i am learing DOM";
+                // result.children[1].textContent="rrrrrrrr"
+                // result.children[2].textContent="ccccccccc"
+     </script>
+</body>
+</html>

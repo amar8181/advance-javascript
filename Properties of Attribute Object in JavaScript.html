@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties of Attribute Object in JavaScript</title>
+</head>
+<body>
+    <h1 style="color:brown">Properties of attribute Object</h1>
+
+    <h1 id="myid" class="myclass"><!-- This is comment --> We are Learing JavaScript</h1>
+    <p id="myid1">I am Paragraph</p>
+
+    <script>
+        //attribute properties- name ,value
+
+            //Name properties
+
+        var result= document.getElementById("myid");
+        document.write(result.attributes[0].name + " = ");
+
+        //value properties
+        document.write(result.attributes[0].value+"<br>");
+
+        //Name properties
+        document.write(result.attributes[1].name + " = ");
+
+        //value properties
+        document.write(result.attributes[1].value+"<br>"+"<br>");
+
+        document.write(result.attributes.length + "<br>");
+
+        for(let i=0; i<result.attributes.length; i++){
+            document.write(result.attributes[i].name+" = ");
+            document.write(result.attributes[i].value+"<br>");
+        }
+
+
+    </script>
+</body>
+</html> 

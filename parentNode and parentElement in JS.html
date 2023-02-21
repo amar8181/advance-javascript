@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentNode and parentElement in JavaScript</title>
+</head>
+<body>
+    <h1>parentNode and parentElement in JavaScript</h1>
+    <h2 id="myid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veniam.
+        <p id="myid1">Lorem ipsum dolor sit amet.
+            <span>Lorem, ipsum dolor.
+                <b>lorem</b>
+            </span>
+        </p>
+    </h2>
+
+    <script>
+        var result=document.getElementById("myid");
+        console.log(result.parentNode);
+        document.write(result.parentNode);
+
+        console.log(result.parentElement);
+        document.write(result.parentElement);
+    </script>
+</body>
+</html>

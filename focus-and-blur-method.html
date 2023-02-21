@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus and blur Method in JavaScript (Hindi)
+    </title>
+</head>
+<body>
+        <h1>focus and blur Method in JavaScript (Hindi)
+        </h1>
+
+        <button type="button" id="openbtn">open window</button>
+        <button type="button" id="focusbtn">focus</button>
+        <button type="button" id="blurbn">blur</button>
+
+        <script>
+            var newWindow;
+
+            function openWin(){
+                newWindow= window.open("","_blank","width=300,height=200");
+            }
+
+            function focusWin(){
+                newWindow.focus;
+            }
+
+            function blurWin(){
+                newWindow.blur;
+            }
+
+            document.getElementById("openbtn").addEventListener("click",openWin);
+            document.getElementById("focusbtn").addEventListener("click",focusWin);
+            document.getElementById("blurbtn").addEventListener("click",blurWin);
+        </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append-comment node</title>
+</head>
+<body>
+    <div id="myid">
+      <h1>creat append comment node js</h1> 
+      <h1>i am h1</h1> 
+   </div>
+
+   <script>
+            //append means adding any new element node or text node by using js
+            //creating new comment node
+
+            var nCNode=document.createComment("comment created by js");
+            var targetNode=document.getElementById("myid");
+
+                //appending new comment to div
+
+            //   targetNode.appendChild(nCNode);
+                                                                    // or
+            targetNode.appendChild(document.createComment("comment created by js"));
+
+                console.log(targetNode);
+   </script>
+
+</body>
+</html>

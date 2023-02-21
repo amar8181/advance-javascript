@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties of Node Object in JavaScript</title>
+</head>
+<body>
+
+    <h1 style="color:brown">Properties of Node Object</h1>
+
+    <h1 id="myid"><!-- This is comment --> We are Learing JavaScript</h1>
+    <p id="myid1">I am Paragraph</p>
+
+    <!-- <script>
+        // Document
+
+        document.write("------------document----------- <br><br>");
+
+        document.write(document.nodeName + "<br>");
+        document.write(document.nodeValue + "<br>");
+        document.write(document.nodeType + "<br>");
+        console.log(document.nodeName);
+        console.log(document.nodeValue);
+        console.log(document.nodeType);
+    </script>-->
+    <hr>
+
+   <!-- <script>
+        // element
+
+        document.write("<br><br>------------element----------- <br><br>");
+
+        var elm=document.getElementById("myid");
+        document.write(elm.nodeName + "<br>");
+        document.write(elm.nodeValue + "<br>");
+        document.write(elm.nodeType + "<br>");
+        console.log(elm.nodeName);
+        console.log(elm.nodeValue);
+        console.log(elm.nodeType);
+    </script>  -->
+
+    <hr> 
+
+    <!-- <script>
+        // text
+
+        document.write("<br><br>------------text----------- <br><br>");
+        
+        var txt=document.getElementById("myid");
+        
+        document.write(txt.firstChild.nodeName + "<br>");
+        document.write(txt.firstChild.nodeValue + "<br>");
+        document.write(txt.firstChild.nodeType + "<br>");
+        console.log(txt.firstChild.nodeName);
+        console.log(txt.firstChild.nodeValue);
+        console.log(txt.firstChild.nodeType);
+    </script>  -->
+    <hr> 
+
+    <script>
+        // comment
+
+        document.write("<br><br>------------comment----------- <br><br>");
+
+        var cmt=document.getElementById("myid");
+
+        document.write(cmt.firstChild.nextSibling.nodeName + "<br>");
+        document.write(cmt.firstChild.nextSibling.nodeValue + "<br>");
+        document.write(cmt.firstChild.nextSibling.nodeType + "<br>");
+        console.log(cmt.firstChild.nextSibling.nodeName);
+        console.log(cmt.firstChild.nextSibling.nodeValue);
+        console.log(cmt.firstChild.nextSibling.nodeType);
+    </script>
+</body>
+</html>

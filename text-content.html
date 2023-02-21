@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-content in js</title>
+</head>
+<body>
+    <p id="myp">This is<span> paragraph</span><em> Lorem ipsum dolor sit amet.</em></p>
+
+    <script>
+        var p=document.getElementById("myp");
+        console.log(p.textContent);
+        console.log(p);
+
+        // text-content property replace the oroginal CONTENT in the code
+        p.textContent="hello guys"
+        console.log(p.textContent);
+    </script>
+</body>
+</html>

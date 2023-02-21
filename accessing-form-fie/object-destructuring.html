@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object distruction in js</title>
+</head>
+<body>
+    <h1>object-destructuring</h1>
+
+   <script>
+     var course= {
+        courseName:"front-end-developer",
+        duration:"sixMonths",
+        company:"usd"
+    };
+    var {courseName, duration, company} = course;
+
+        // console.log(courseName, duration, company);
+        // or
+
+        console.log(courseName);
+        console.log(duration);
+        console.log(company);
+   </script>
+
+   <script>
+            var { a, b } = { a: 10, b: 20 };
+            console.log(a);
+            console.log(b);
+   </script>
+
+   <hr>
+
+
+
+                                                                <!-- or -->
+
+                                                                <h1>object passing to a function</h1>
+
+                                                                <script>
+                                                                            var course= {
+                                                                        courseName:"front-end-developer",
+                                                                        duration:"sixMonths",
+                                                                        company:"usd"
+                                                                    };
+
+                                                                    function show ({courseName, duration, company}){
+                                                                        console.log(courseName);
+                                                                        console.log(duration);
+                                                                        console.log(company);
+                                                                    }
+
+                                                                    show(course);
+                                                                </script>
+
+                                                                <hr>
+
+
+
+                                                                
+<!-- or -->
+                <h1>object returning from a function</h1>
+
+        <script>
+            var course={
+                courseName:"front-end-developer",
+                duration:"sixMonths",
+                company:"usd"
+            };
+
+            function show(z){
+                return z;
+            }
+
+            var {courseName, duration, company} = show(course);
+            console.log(courseName);
+            console.log(duration);
+            console.log(company);
+        </script>
+
+                                                                    <!-- or -->
+                                                                    <hr>
+                                                                    <h1>nasted object-destructuring</h1>
+
+                                                                    <script>
+                                                                        var course={
+                                                                            courseName:"front-end-developer",
+                                                                            duration:"sixMonths",
+                                                                            company:"usd",
+                                                                            student: {
+                                                                                stu1:"Rahul",
+                                                                                stu2:"Sonam",
+                                                                            }
+                                                                        };
+                                                                        var {courseName, duration, company,student: {stu1, stu2}} = course;
+                                                                            console.log(courseName);
+                                                                            console.log(duration);
+                                                                            console.log(company);
+                                                                            console.log(stu1);
+                                                                            console.log(stu2);
+                                                                    </script>
+</body>
+</html>

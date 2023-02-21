@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentHTML-method</title>
+</head>
+<body>
+   <div id="mydiv">
+    <h1 id="myid">insertAdjacentElement-method</h1>
+    <h2 id="myid1">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="myid2">Lorem ipsum dolor sit.</h3>
+
+   </div>
+
+    <script>
+        //syntax
+        //tergetElement.insertAdjacentHTML("position", element)
+        //position = beforebegin, afterbegin, beforeend, afterend.
+
+        var parentNode=document.getElementById("mydiv");
+
+        var h=document.getElementById("myid1");
+
+        var myhtml="<b> usd services </b>";
+
+        h.insertAdjacentHTML("beforebegin", myhtml);
+        // h.insertAdjacentHTML("afterbegin", myhtml);
+        // h.insertAdjacentHTML("beforeend", myhtml);
+        // h.insertAdjacentHTML("afterend", myhtml);
+
+        console.log(parentNode);
+    </script>
+</body>
+</html>

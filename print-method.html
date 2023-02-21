@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print-method</title>
+</head>
+<body>
+        <h1>print-method</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Hic maxime delectus amet quasi labore culpa enim quis error nam aspernatur,
+              dignissimos tempore, iure excepturi accusantium velit accusamus veritatis 
+              consequatur expedita corporis natus quod. Amet eaque deserunt modi fugit 
+              itaque at ipsa qui perferendis laborum ipsum, temporibus saepe, quod voluptatibus a.
+        </p><br><br>
+
+            <button type="button" id="btn">Print</button>
+
+            <script>
+                function PrintDoc(){
+                    window.print();
+                }
+                document.getElementById("btn").addEventListener("click",PrintDoc);
+            </script>
+</body>
+</html>

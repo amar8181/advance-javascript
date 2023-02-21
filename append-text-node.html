@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append-text node</title>
+</head>
+<body>
+    <div id="myid">
+      <h1>creat append text node js</h1> 
+      <h1>i am h1</h1> 
+   </div>
+
+   <script>
+            //append means adding any new element node or text node by using js
+            //creating new text node
+
+            var nTNode=document.createTextNode("text created by js");
+            var targetNode=document.getElementById("myid");
+
+                //appending new text to div
+
+              targetNode.appendChild(nTNode);
+                                                                    // or
+            // targetNode.appendChild(document.createTextNode("text created by js"));
+
+                console.log(targetNode);
+   </script>
+
+</body>
+</html>

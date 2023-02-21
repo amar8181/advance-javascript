@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerHTML-method</title>
+</head>
+<body>
+    <h1 style="border:2px solid red;text-align: center;color: purple;">outerHTML-method</h1>
+
+   <div id="mydiv">
+        <ul id="myul">
+            <li>red</li>
+            <li>yellow</li>
+            <li>blue</li>
+            <li>green</li>
+        </ul>
+   </div>
+
+    <script>
+        var div=document.getElementById("mydiv");
+        var u=document.getElementById("myul");
+        u.outerHTML="<p>this is paragraph</p>"
+        console.log(div);
+    </script>
+</body>
+</html>

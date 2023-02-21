@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Style Manipulation</title>
+
+    <style>
+        .myclass2{
+            background-color: aquamarine;
+        }
+        .myclass1{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p id="myid" class="myclass2" style="color:white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, iste.</p>
+
+    <script>
+        var p=document.getElementById("myid")
+        p.className="myclass1";
+        console.log(p);
+    </script>
+</body>
+</html>

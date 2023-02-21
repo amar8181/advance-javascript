@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insretAdjacentElement-method</title>
+</head>
+<body>
+   <div id="mydiv">
+    <h1 id="myid">insretAdjacentElement-method</h1>
+    <h2 id="myid1">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="myid2">Lorem ipsum dolor sit.</h3>
+
+   </div>
+
+    <script>
+        //syntax
+        //tergetElement.insertAdjacentElement("position", element)
+        //position = beforebegin, afterbegin, beforeend, afterend.
+
+        var parentNode=document.getElementById("mydiv");
+        var h=document.getElementById("myid1");
+        var element=document.createElement("span");
+        element.textContent="this is span"
+
+      //  tergetElement.insertAdjacentElement("position", element)
+
+        h.insertAdjacentElement("beforebegin", element);
+        // h.insertAdjacentElement("afterbegin", element);
+        // h.insertAdjacentElement("beforeend", element);
+        // h.insertAdjacentElement("afterend", element);
+
+        console.log(parentNode);
+    </script>
+</body>
+</html>

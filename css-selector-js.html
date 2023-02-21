@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-selector in js</title>
+</head>
+<body>
+    <h1 id="myheading">css selector in js</h1>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/098/204/small/silver-tabby-cat-sitting-on-green-background-free-photo.jpg" alt="Cat-image">
+    <img src="https://www.shutterstock.com/image-vector/js-j-s-letter-logo-260nw-1630593262.jpg" alt="js-image">
+
+    <div>
+        <ul id="myul">
+            <li class="myli one">item 1</li>
+            <li class="myli two">item 2</li>
+            <li class="myli three">item 3</li>
+            <li class="myli four">item 4</li>
+            <li class="myli five">item 5</li>
+            <li class="myli six">item 6</li>
+            <li class="myli seven">item 7</li>
+            <li class="myli eight">item 8</li>
+        </ul>
+    </div>
+
+    <p title="mypara1" class="red black">This is paragraph 1</p>
+    <p title="mypara2" class="red">This is paragraph 2</p>
+    <p title="mypara3" class="black">This is paragraph 3</p>
+    <p title="mypara4" id="book">This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+
+    <h3 class="red">Heading 3</h3>
+    <h4 id="book">Heading 3</h4>
+
+    <script>
+        // css selector DOM/////////////////////////
+        // element Selector
+
+        var list=document.querySelectorAll("p");
+        console.log(list);   
+
+               // using with index number
+        console.log(list[0]);   
+
+
+
+
+        // group selector
+        var list=document.querySelectorAll("div,p,li");
+        console.log(list);
+        console.log(list.length);
+
+        // universal selector
+        var list=document.querySelectorAll("*");
+        console.log(list);
+        
+
+        // class  selector or style class
+        // universal style class
+        var list=document.querySelectorAll(".red");
+        console.log(list);
+
+        var list=document.querySelectorAll(".myli");
+        console.log(list);
+
+        // element with specific class-selector
+        // var list=document.querySelectorAll("p.red.black");
+        // var list=document.querySelectorAll("p.red");
+        var list=document.querySelectorAll("p.black");
+        console.log(list);
+
+        // id selector
+        var list=document.querySelectorAll("p#book");
+        console.log(list);
+
+
+            // attribute selector
+        var list=document.querySelectorAll("p[title]");
+        console.log(list);
+
+        var list=document.querySelectorAll("p[title='mypara1']");
+        console.log(list);
+
+    </script>
+</body>
+</html>

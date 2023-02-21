@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML-method</title>
+</head>
+<body>
+    <h1 style="border:2px solid red;text-align: center;color: purple;">innerHTML-method</h1>
+
+    <ul id="myul">
+        <li>red</li>
+        <li>yellow</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+
+    <script>
+        var u=document.getElementById("myul");
+        u.innerHTML="<li>html</li><li>css</li><li>php</li>"
+    </script>
+</body>
+</html>

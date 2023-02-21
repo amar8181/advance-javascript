@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-accessing</title>
+</head>
+<body>
+    <h1>how to accessing form using js methods</h1>
+
+    <form action="" name="form1" id="form11">
+        Name    :<input type="text"><br><br>
+        Password: <input type="passward" name="" id=""><br><br>
+        <input type="submit">
+    </form>
+
+    <hr><hr>
+
+    <form action="" name="form2" id="form22">
+        Name    :<input type="text"><br><br>
+        Password: <input type="passward" name="" id=""><br><br>
+        <input type="submit">
+    </form>
+<!-- 
+    <script>
+        // accessing form with index number
+        var mform= document.forms[0];
+        var mform= document.forms[1];
+        console.log(mform);
+    </script> -->
+
+    <!-- <script>
+        // accessing form with name attribute
+        var mform= document.forms["form1"];
+        console.log(mform);
+    </script>
+     -->
+<!-- 
+    <script>
+        // accessing form with name attribute using dot(.)
+        var mform= document.form2;
+        console.log(mform);
+    </script> -->
+
+    <script>
+        // accessing form with id
+        var mform= document.getElementById("form11");
+        console.log(mform);
+    </script>
+</body>
+</html>

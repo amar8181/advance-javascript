@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore- method</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>sam</li>
+        <li id="myli">pramod</li>
+        <li>raj</li>
+        <li id="mym">mahesh</li>
+    </ul>
+
+        <script>
+
+            //creating and accessing nodes with content
+
+            var parentNode = document.getElementById("myul");
+
+            var newNode=document.createElement("li");
+
+            newNode.textContent="HARSH"
+
+            var refNode = document.getElementById("myli");
+
+            // using insertBefore- method syntax
+
+            var insertNode=parentNode.insertBefore(newNode, refNode);
+            console.log(insertNode);
+
+   // or
+
+            // var insertNode=parentNode.insertBefore(newNode, null);
+            // console.log(insertNode);
+
+        </script>
+
+
+
+
+
+                                <!-- other way of insertBefore method -->
+
+                                <ol id="myol">
+                                    <li>sam</li>
+                                    <li id="myoli">pramod</li>
+                                    <li>raj</li>
+                                    <li id="myom">mahesh</li>
+                                </ol>
+
+
+           <script>
+
+            // same method with new syntex
+
+            var parentNode = document.getElementById("myol");
+            var moveNode=document.getElementById("myom");
+            var referNode=document.getElementById("myoli")
+
+            var insertNodee=parentNode.insertBefore(moveNode, referNode);
+            console.log(insertNodee);
+        </script>
+</body>
+</html>

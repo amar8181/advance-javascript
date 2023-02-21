@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accessing form field in js</title>
+</head>
+<body>
+
+    <h1>accessing form field in js</h1>
+
+    <form action="" name="form1" id="form11">
+        Name    :<input type="text" name="one" id="eleone"><br><br>
+        Password: <input type="passward" name="two" id="twelve"><br><br>
+        <input type="submit" name="three" id="thirteen">
+    </form>
+
+    <script>
+                                                // with element [index number]
+
+        // var usrname = document.form1.elements[2];
+        // console.log(usrname);
+
+ // or
+                                                 // with element ['name_attribute_value']
+                                                 
+            //   var usrname = document.form1.elements['two'];
+            //     console.log(usrname);
+
+// or
+                                                 // with element .id
+                                                 
+              var usrname = document.form1.elements.thirteen;
+                console.log(usrname);
+
+    </script>
+
+</body>
+</html>

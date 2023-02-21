@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout Methods</title>
+</head>
+<body>
+    <h1>setTimeout Methods</h1>
+
+    <!-- 1st method -->
+
+    <p id="myp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At alias, accusantium suscipit, quibusdam doloremque, vero saepe unde eos molestias sit ducimus libero laudantium. Rem quisquam non animi harum fugiat, nostrum, eius totam facilis hic exercitationem similique fugit ab consectetur id iure maxime. Hic, est laboriosam! Perspiciatis hic doloremque quos omnis?</p>
+
+    <script>
+
+        // function ChangeCSS(){
+        //     document.getElementById("myp").style='color:red';
+        // }
+        // setTimeout(ChangeCSS, 10000);
+
+                                                          // or
+
+        setTimeout( function ChangeCSS(){
+            document.getElementById("myp").style='color:red';
+        }, 4000);
+    </script>
+
+    <hr><br><br>
+
+
+
+    <!-- 2nd method -->
+    
+    <h1>clearTimeout method</h1>
+
+    <p id="mypp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At alias, accusantium suscipit, quibusdam doloremque, vero saepe unde eos molestias sit ducimus libero laudantium. Rem quisquam non animi harum fugiat, nostrum, eius totam facilis hic exercitationem similique fugit ab consectetur id iure maxime. Hic, est laboriosam! Perspiciatis hic doloremque quos omnis?</p>
+    <button type="button" id="mybtn">ClearTime</button>
+
+    <script>
+              var timeoutID =  setTimeout(() => {
+            document.getElementById("mypp").style='color:red';
+        }, 6000);
+
+        function clrtime(){
+            clearTimeout(timeoutID);
+        }
+        document.getElementById("mybtn").addEventListener("click",clrtime);
+    </script>
+</body>
+</html>
